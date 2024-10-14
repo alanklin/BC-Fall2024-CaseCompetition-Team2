@@ -42,6 +42,9 @@ imputedDataPath = os.path.join(dataPath, "imputedData")
 rawTrainFile = os.path.join(rawDataPath, "train.csv")
 rawTestFile = os.path.join(rawDataPath, "test.csv")
 
+rawTrainFilePickle = os.path.join(rawDataPath, "train.pkl")
+rawTestFilePickle = os.path.join(rawDataPath, "test.pkl")
+
 tensorDecompTrainFile = os.path.join(imputedDataPath, "tensor_decomp_pre_knn.csv")
 imputedTrainFile = os.path.join(imputedDataPath, "iterative_imputed.csv")
 kmeansTrainFile = os.path.join(imputedDataPath, "kmeans_imputed.csv")
