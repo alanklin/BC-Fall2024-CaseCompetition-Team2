@@ -47,5 +47,9 @@ imputedTrainFile = os.path.join(imputedDataPath, "iterative_imputed.csv")
 kmeansTrainFile = os.path.join(imputedDataPath, "kmeans_imputed.csv")
 
 tensorDecompTrainFilePickle = os.path.join(imputedDataPath, "tensor_decomp_pre_knn.pkl")
+
+# Unimportant/SKlearn generated
 imputedTrainFilePickle = os.path.join(imputedDataPath, "iterative_imputed.pkl")
+
+# IMPORTANT TEAM-AGREED SOLUTION
 kmeansTrainFilePickle = os.path.join(imputedDataPath, "kmeans_imputed.pkl")
