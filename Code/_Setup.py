@@ -1,6 +1,7 @@
 """
 
 @author: AL
+@author: TP
 """
 
 #%% imports
@@ -24,6 +25,8 @@ from sklearn.model_selection import train_test_split
 
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, MinMaxScaler
 from sklearn.feature_selection import VarianceThreshold
+
+from imblearn.over_sampling import SMOTE
 
 
 # paths
