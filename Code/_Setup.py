@@ -44,6 +44,7 @@ imputedDataPath = os.path.join(dataPath, "imputedData")
 
 rawTrainFile = os.path.join(rawDataPath, "train.csv")
 rawTestFile = os.path.join(rawDataPath, "test.csv")
+rawSubmissionFile = os.path.join(rawDataPath, "sample_submission.csv")
 
 rawTrainFilePickle = os.path.join(rawDataPath, "train.pkl")
 rawTestFilePickle = os.path.join(rawDataPath, "test.pkl")
@@ -52,10 +53,15 @@ tensorDecompTrainFile = os.path.join(imputedDataPath, "tensor_decomp_pre_knn.csv
 imputedTrainFile = os.path.join(imputedDataPath, "iterative_imputed.csv")
 kmeansTrainFile = os.path.join(imputedDataPath, "kmeans_imputed.csv")
 
+
+
 tensorDecompTrainFilePickle = os.path.join(imputedDataPath, "tensor_decomp_pre_knn.pkl")
 
 # Unimportant/SKlearn generated
 imputedTrainFilePickle = os.path.join(imputedDataPath, "iterative_imputed.pkl")
 
 # IMPORTANT TEAM-AGREED SOLUTION
+
+# TODO : Separate file paths for train and test pickle into train/test folders?
 kmeansTrainFilePickle = os.path.join(imputedDataPath, "kmeans_imputed.pkl")
+kmeansTestFilePickle = os.path.join(imputedDataPath, "kmeans_test_imputed.pkl")
