@@ -8,7 +8,6 @@
 
 import os, sys
 
-import pyarrow.feather as feather
 from matplotlib import pyplot as plt
 import seaborn as sns
 import numpy as np
@@ -63,5 +62,5 @@ imputedTrainFilePickle = os.path.join(imputedDataPath, "iterative_imputed.pkl")
 # IMPORTANT TEAM-AGREED SOLUTION
 
 # TODO : Separate file paths for train and test pickle into train/test folders?
-kmeansTrainFilePickle = os.path.join(imputedDataPath, "kmeans_imputed.pkl")
+kmeansTrainFilePickle = os.path.join(imputedDataPath, "kmeans_train_imputed.pkl")
 kmeansTestFilePickle = os.path.join(imputedDataPath, "kmeans_test_imputed.pkl")
