@@ -53,8 +53,6 @@ tensorDecompTrainFile = os.path.join(imputedDataPath, "tensor_decomp_pre_knn.csv
 imputedTrainFile = os.path.join(imputedDataPath, "iterative_imputed.csv")
 kmeansTrainFile = os.path.join(imputedDataPath, "kmeans_imputed.csv")
 
-missForestTrainFile = os.path.join(imputedDataPath, "kmeans_imputed.csv")
-
 
 tensorDecompTrainFilePickle = os.path.join(imputedDataPath, "tensor_decomp_pre_knn.pkl")
 
@@ -64,8 +62,13 @@ imputedTrainFilePickle = os.path.join(imputedDataPath, "iterative_imputed.pkl")
 # IMPORTANT TEAM-AGREED SOLUTION
 
 # TODO : Separate file paths for train and test pickle into train/test folders?
-kmeansTrainFilePickle = os.path.join(imputedDataPath, "kmeans_train_imputed.pkl")
-kmeansTestFilePickle = os.path.join(imputedDataPath, "kmeans_test_imputed.pkl")
 
-kmeansTrainFileCSV = os.path.join(imputedDataPath, "imputed_train.csv")
-kmeansTestFileCSV = os.path.join(imputedDataPath, "scaled_test_data.csv")
+missForestTrainFile = os.path.join(imputedDataPath, "missforest_imputed_train.pkl")
+
+# these are garbo
+
+#kmeansTrainFilePickle = os.path.join(imputedDataPath, "kmeans_train_imputed.pkl")
+#kmeansTestFilePickle = os.path.join(imputedDataPath, "kmeans_test_imputed.pkl")
+
+#kmeansTrainFileCSV = os.path.join(imputedDataPath, "imputed_train.csv")
+#kmeansTestFileCSV = os.path.join(imputedDataPath, "scaled_test_data.csv")
