@@ -64,3 +64,6 @@ imputedTrainFilePickle = os.path.join(imputedDataPath, "iterative_imputed.pkl")
 # TODO : Separate file paths for train and test pickle into train/test folders?
 kmeansTrainFilePickle = os.path.join(imputedDataPath, "kmeans_train_imputed.pkl")
 kmeansTestFilePickle = os.path.join(imputedDataPath, "kmeans_test_imputed.pkl")
+
+kmeansTrainFileCSV = os.path.join(imputedDataPath, "imputed_train.csv")
+kmeansTestFileCSV = os.path.join(imputedDataPath, "scaled_test_data.csv")
