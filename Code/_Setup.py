@@ -8,7 +8,7 @@
 
 import os, sys
 
-from missforest import MissForest
+from missforest.missforest import MissForest
 from matplotlib import pyplot as plt
 import seaborn as sns
 import numpy as np
