@@ -26,6 +26,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, MinMaxScaler
 from sklearn.feature_selection import VarianceThreshold
 
+from sklearn.decomposition import PCA
+
 from imblearn.over_sampling import SMOTE
 
 
@@ -63,7 +65,8 @@ imputedTrainFilePickle = os.path.join(imputedDataPath, "iterative_imputed.pkl")
 
 # TODO : Separate file paths for train and test pickle into train/test folders?
 
-missForestTrainFile = os.path.join(imputedDataPath, "missforest_imputed_train.pkl")
+missForestTrainFile = os.path.join(imputedDataPath, "missforest_imputed_train.csv")
+missForestTestFile = os.path.join(imputedDataPath, "missforest_imputed_test.csv")
 
 # these are garbo
 
