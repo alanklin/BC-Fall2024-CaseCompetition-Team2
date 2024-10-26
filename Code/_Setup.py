@@ -8,7 +8,7 @@
 
 import os, sys
 
-import pyarrow.feather as feather
+from missforest import MissForest
 from matplotlib import pyplot as plt
 import seaborn as sns
 import numpy as np
@@ -25,6 +25,8 @@ from sklearn.model_selection import train_test_split
 
 from sklearn.preprocessing import StandardScaler, OneHotEncoder, MinMaxScaler
 from sklearn.feature_selection import VarianceThreshold
+
+from sklearn.decomposition import PCA
 
 from imblearn.over_sampling import SMOTE
 
@@ -54,7 +56,6 @@ imputedTrainFile = os.path.join(imputedDataPath, "iterative_imputed.csv")
 kmeansTrainFile = os.path.join(imputedDataPath, "kmeans_imputed.csv")
 
 
-
 tensorDecompTrainFilePickle = os.path.join(imputedDataPath, "tensor_decomp_pre_knn.pkl")
 
 # Unimportant/SKlearn generated
@@ -63,5 +64,14 @@ imputedTrainFilePickle = os.path.join(imputedDataPath, "iterative_imputed.pkl")
 # IMPORTANT TEAM-AGREED SOLUTION
 
 # TODO : Separate file paths for train and test pickle into train/test folders?
-kmeansTrainFilePickle = os.path.join(imputedDataPath, "kmeans_imputed.pkl")
-kmeansTestFilePickle = os.path.join(imputedDataPath, "kmeans_test_imputed.pkl")
+
+missForestTrainFile = os.path.join(imputedDataPath, "missforest_imputed_train.csv")
+missForestTestFile = os.path.join(imputedDataPath, "missforest_imputed_test.csv")
+
+# these are garbo
+
+#kmeansTrainFilePickle = os.path.join(imputedDataPath, "kmeans_train_imputed.pkl")
+#kmeansTestFilePickle = os.path.join(imputedDataPath, "kmeans_test_imputed.pkl")
+
+#kmeansTrainFileCSV = os.path.join(imputedDataPath, "imputed_train.csv")
+#kmeansTestFileCSV = os.path.join(imputedDataPath, "scaled_test_data.csv")
