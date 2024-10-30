@@ -65,8 +65,10 @@ imputedTrainFilePickle = os.path.join(imputedDataPath, "iterative_imputed.pkl")
 
 # TODO : Separate file paths for train and test pickle into train/test folders?
 
-missForestTrainFile = os.path.join(imputedDataPath, "missforest_imputed_train.csv")
-missForestTestFile = os.path.join(imputedDataPath, "missforest_imputed_test.csv")
+missForestTrainFile = os.path.join(imputedDataPath, "missforest_imputed_train.pkl")
+
+missForestTestFile = os.path.join(imputedDataPath, "missforest_imputed_test.pkl")
+
 
 # these are garbo
 
