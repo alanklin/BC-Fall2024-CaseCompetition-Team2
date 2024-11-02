@@ -65,6 +65,8 @@ imputedTrainFilePickle = os.path.join(imputedDataPath, "iterative_imputed.pkl")
 
 # IMPORTANT TEAM-AGREED SOLUTION
 
+validationFile = os.path.join(imputedDataPath, "imputed_validate.csv")
+
 missForestTrainFile = os.path.join(imputedDataPath, "missforest_imputed_train.csv")
 
 missForestTestFile = os.path.join(imputedDataPath, "missforest_imputed_test.csv")
