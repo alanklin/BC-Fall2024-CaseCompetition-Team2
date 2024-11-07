@@ -10,7 +10,6 @@ import os, sys
 
 from missforest.missforest import MissForest
 from matplotlib import pyplot as plt
-import tensorflow as tf
 import ydf
 import seaborn as sns
 import numpy as np
@@ -70,3 +69,7 @@ validationFile = os.path.join(imputedDataPath, "imputed_validate.csv")
 missForestTrainFile = os.path.join(imputedDataPath, "missforest_imputed_train.csv")
 
 missForestTestFile = os.path.join(imputedDataPath, "missforest_imputed_test.csv")
+
+rnnTrainFile = os.path.join(imputedDataPath, "rnn_train.csv")
+rnnValFile = os.path.join(imputedDataPath, "rnn_val.csv")
+rnnTestFile = os.path.join(imputedDataPath, "rnn_test.csv")

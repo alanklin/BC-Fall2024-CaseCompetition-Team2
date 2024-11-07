@@ -40,3 +40,28 @@ def FeatureEngineering(df):
         ).astype(int)
     
     return df
+
+# backward fill function
+def backward_fill_by_patient(df, patient_id_col='patient'):
+    # Create a copy of the original DataFrame
+    df_imputed = df.copy()
+
+    df_imputed.loc[:, df_imputed.columns != patient_id_col] = (
+        df_imputed.groupby(patient_id_col)
+        .bfill()
+    )
+
+    # If there are patients with no entries for a column, those columns will remain unchanged
+    return df_imputed
+
+def forward_fill_by_patient(df, patient_id_col='patient'):
+    # Create a copy of the original DataFrame
+    df_imputed = df.copy()
+
+    df_imputed.loc[:, df_imputed.columns != patient_id_col] = (
+        df_imputed.groupby(patient_id_col)
+        .ffill()
+    )
+    
+    # If there are patients with no entries for a column, those columns will remain unchanged
+    return df_imputed
