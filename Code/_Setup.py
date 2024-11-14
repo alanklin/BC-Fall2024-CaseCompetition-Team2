@@ -33,7 +33,7 @@ from imblearn.over_sampling import SMOTE
 
 
 # paths
-codePath = os.path.abspath('.')
+codePath = os.path.abspath('../')
 
 
 projPath = os.path.dirname(codePath)
